@@ -1,0 +1,8 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}" />
+
+<div class="container">
+  <h1>Logged Out</h1>
+
+  <p>You have been logged out. <a href="{% url 'login' %}">Login again?</a></p>
+</div>

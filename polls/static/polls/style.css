@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    animation: slideIn 0.5s ease-out;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #1e90ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1c86ee;
+}
+
+.error-message {
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1c86ee;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #187bcd;
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
